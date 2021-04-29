@@ -111,6 +111,7 @@ This resource iterates over a map of alarm configurations. It can create both st
 
 A config for a static alarm might look like this:
 
+```hcl
 cloudwatch_alarms = {
   "unique-alarm-name" : {
     alarm_description   = "alarm-description"
@@ -123,10 +124,13 @@ cloudwatch_alarms = {
     extended_statistic  = "p90"
   },
 }
+```
 
 ### Anomaly Detection Alarm
 
 A config for an anomaly detection alarm might look like this:
+
+```hcl
 cloudwatch_alarms = {
   "unique-alarm-name" : {
     alarm_description   = "alarm-description"
@@ -139,3 +143,4 @@ cloudwatch_alarms = {
     stat                = "Average"
   },
 }
+```
