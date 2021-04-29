@@ -9,7 +9,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-module "vpc" {
+module "terraform_aws_cloudwatch_alarm" {
   source            = "./terraform-aws-cloudwatch-alarm"
   notification_arns = [aws_sns_topic.alarm_notifications.arn]
 
